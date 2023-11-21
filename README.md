@@ -22,8 +22,8 @@ _Prerequisites: You must have a Terraform Cloud account with access to the priva
 Terraform Stacks, a GitHub account, and an AWS account with Terraform Cloud configured as an OIDC
 identity provider. Details of all of this are found in the provided Stacks User Guide._
 
-1. **Configure AWS authentication** by creating a new IAM role in the AWS web console (or with
-   Terraform itself!) with proper permissions (S3, Lambda, and API Gateway) and a trust policy to
+1. **Configure AWS authentication** by creating new IAM roles in the AWS web console (or with
+   Terraform itself!) with proper permissions (S3, Lambda, and API Gateway) and a trust policies to
    allow the role to be assumed by Terraform Cloud (the OIDC identity provider). More details on this
    step can be found in the Stacks User Guide.
 2. **Fork this repository** to your own GitHub account, such that you can edit this stack configuration
