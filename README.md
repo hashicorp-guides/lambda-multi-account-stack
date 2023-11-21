@@ -4,7 +4,7 @@ _This is an example stack configuration for the private preview of Terraform Sta
 constructs and features are subject to change given feedback received during this preview. Do not
 use Stacks for production workloads at this time._
 
-<image>
+![lambda-multi-account-stack](https://github.com/hashicorp/lambda-multi-account-stack/assets/2430490/a6d2bb5c-5a0e-49fa-ba3d-a9b0dc47ec0f)
 
 An example Terraform Stack that provisions an AWS S3 bucket, an AWS Lambda function served from that bucket,
 and an AWS API Gateway to invoke that function at a URL, all across multiple AWS accounts.
