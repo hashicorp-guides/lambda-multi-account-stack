@@ -2,6 +2,13 @@ identity_token "aws" {
   audience = ["<Set to your AWS IAM assume-role audience>"]
 }
 
+# A single workload token can be trusted by multiple accounts - but optionally, you can generate a
+# separate token with a difference audience value for your second account and use it below.
+#
+# identity_token "account_2" {
+#   audience = ["<Set to your AWS IAM assume-role audience>"]
+# }
+
 deployment "development" {
   variables = {
     region              = "us-east-1"
