@@ -28,7 +28,10 @@ identity provider. Details of all of this are found in the provided Stacks User 
    step can be found in the Stacks User Guide.
 2. **Fork this repository** to your own GitHub account, such that you can edit this stack configuration
    for your purposes.
-3. **Edit your forked stack configuration** and change `deployments.tfdeploy.hcl` to use the ARN of the
-   IAM role you created, as well as an audience value for OpenID Connect.
+3. **Edit your forked stack configuration** and change `deployments.tfdeploy.hcl` to use the ARNs of the
+   IAM roles you created, as well as an audience value(s) for OpenID Connect.
 4. **Create a new stack** in Terraform Cloud and connect it to your forked configuration repository.
-5. **Provision away!**
+5. **Provision away!** Once applied, look at the `invoke_url` attribute for the
+   `aws_apigatewayv2_stage.lambda` resource in the API Gateway component for a given deployment; add `/hello?name=<Name>` to
+   get a warm greeting! (e.g. `https://wbshl7x6wb.execute-api.us-east-1.amazonaws.com/serverless_lambda_stage/hello?name=Chris`)
+
