@@ -6,7 +6,8 @@ variable "region" {
 }
 
 variable "identity_token" {
-  type = string
+  type      = string
+  ephemeral = true
 }
 
 variable "role_arn" {
